@@ -9,7 +9,7 @@ def main():
     The FTD device already has 100.127.100.15 on its management interface and the command 'configure network manager
     100.64.0.155 cisco123' has already been manually typed on the FTD's CLI.
     """
-    with fmcapi.FMC(host='100.64.0.166', username='apiadmin', password='C1sco12345', autodeploy=True) as fmc1:
+    with fmcapi.FMC(host='10.122.41.144', username='admin', password='Nsite12345$', autodeploy=True) as fmc1:
         # Create Security Zones
         sz1 = fmcapi.SecurityZones(fmc=fmc1)
         sz1.name = 'Restricted'
